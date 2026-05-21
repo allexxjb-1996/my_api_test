@@ -5,14 +5,41 @@
       "placa": "ABC1D23",
       "tipo": "Truck",
       "capacidade_kg": 14000,
-      "status": "ativo"
+      "status": "ativo",
+      "ultima_localizacao": "São Paulo",
+      "velocidade_media_kmh": 60
     }
   ],
   "motoristas": [
     {
       "id": 1,
       "nome": "Carlos Silva",
-      "categoria": "E"
+      "categoria": "E",
+      "status": "disponivel"
+    }
+  ],
+  "entregas": [
+    {
+      "id": 1,
+      "cliente": "Atacadão SP",
+      "endereco": "Av. Paulista, 1000",
+      "cidade": "São Paulo",
+      "janela_inicio": "08:00",
+      "janela_fim": "12:00",
+      "peso_kg": 1200,
+      "status": "pendente",
+      "sequencia": 1
+    },
+    {
+      "id": 2,
+      "cliente": "Mercado Central",
+      "endereco": "Rua Augusta, 500",
+      "cidade": "São Paulo",
+      "janela_inicio": "10:00",
+      "janela_fim": "16:00",
+      "peso_kg": 800,
+      "status": "pendente",
+      "sequencia": 2
     }
   ],
   "rotas": [
@@ -21,7 +48,20 @@
       "data": "2026-05-21",
       "veiculo_id": 1,
       "motorista_id": 1,
-      "status": "planejada"
+      "entregas_ids": [1, 2],
+      "km_previsto": 120,
+      "tempo_previsto_min": 180,
+      "status": "em_execucao"
+    }
+  ],
+  "tracking": [
+    {
+      "id": 1,
+      "veiculo_id": 1,
+      "data_hora": "2026-05-21T09:00:00",
+      "latitude": -23.5505,
+      "longitude": -46.6333,
+      "status": "em rota"
     }
   ]
 }
