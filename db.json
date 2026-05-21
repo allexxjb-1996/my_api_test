@@ -1,0 +1,27 @@
+{
+  "veiculos": [
+    {
+      "id": 1,
+      "placa": "ABC1D23",
+      "tipo": "Truck",
+      "capacidade_kg": 14000,
+      "status": "ativo"
+    }
+  ],
+  "motoristas": [
+    {
+      "id": 1,
+      "nome": "Carlos Silva",
+      "categoria": "E"
+    }
+  ],
+  "rotas": [
+    {
+      "id": 1,
+      "data": "2026-05-21",
+      "veiculo_id": 1,
+      "motorista_id": 1,
+      "status": "planejada"
+    }
+  ]
+}
